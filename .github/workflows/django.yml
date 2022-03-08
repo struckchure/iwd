@@ -28,9 +28,7 @@ jobs:
         pipenv install
     - name: Run migrations
       run: |
-        pipenv shell
         python manage.py migrate
     - name: Run Tests
       run: |
-        pipenv shell
         python manage.py test
