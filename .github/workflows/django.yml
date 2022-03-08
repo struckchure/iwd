@@ -17,15 +17,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
-      run: |
-        python -m pip install pipenv
-        pipenv shell
-        pipenv install
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: install -d
     - name: Run migrations
       run: |
         python manage.py migrate
