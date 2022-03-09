@@ -1,3 +1,58 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+html,
+body {
+  @apply h-full w-full bg-[#eee];
+}
+
+button {
+  @apply h-fit w-fit rounded-full bg-gray-900 py-2 px-4 text-white transition duration-100;
+}
+
+a {
+  @apply mx-1 underline;
+}
+
+nav,
+footer {
+  @apply flex-col items-center justify-between bg-slate-200 px-6 md:flex md:flex-row;
+
+  ul {
+    @apply flex items-center justify-between gap-2 p-0;
+
+    &.links {
+      @apply hidden flex-col py-2 md:flex md:flex-row md:py-0;
+    }
+
+    &.logo {
+      a {
+        @apply font-semibold text-gray-800;
+
+        &:hover {
+          @apply border-none;
+        }
+      }
+    }
+
+    li {
+      a {
+        @apply block p-4 text-slate-400 no-underline transition duration-200 hover:bg-[rgba(0,0,0,0.05)];
+
+        &.active,
+        &:hover {
+          @apply border-b-2 border-solid border-gray-800 text-gray-800;
+        }
+      }
+    }
+  }
+}
+
+section {
+  @apply py-4;
+}
+
+.divider {
+  @apply h-[1px] w-full bg-gray-300;
+}
