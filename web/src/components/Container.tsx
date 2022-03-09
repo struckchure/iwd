@@ -1,6 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-function Container({ children: React.ReactNode }) {
+interface Props {
+  children: ReactNode,
+}
+
+
+
+function Container({ children: }: Props) {
   return <div className="container px-4 py-4 md:px-[10rem]">{children}</div>;
 }
 
