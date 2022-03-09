@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg {
+  background-color: hsl(0, 0%, 90%);
+}
+
+@layer components {
+  .body-content {
+    @apply flex my-5 place-content-between;
+  }
+}
