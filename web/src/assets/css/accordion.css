@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg {
+.main {
   background-color: hsl(0, 0%, 90%);
+  margin: 0 auto;
+}
+
+.down {
+  background-color: transparent;
+  color: black;
 }
 
 @layer components {
