@@ -1,19 +1,24 @@
+import { useState } from "react";
 import "../assets/css/accordion.css";
 
 const Accordio = () => {
+  const handleClick = () => {
+    console.log("clicked");
+  };
   return (
-    <div className="p-3 w-1/2 bg">
-      <header className="p-5">
+    <div className="p-3 w-1/2 main shadow-lg shadow-indigo-500">
+      <header className="px-5 pt-5 pb-2">
         <h1 className="text-3xl text-blue-500  mb-2">
           Frequently asked questions{" "}
         </h1>
-        <p className="">
-          Need Answers? Everything you need to know, Find them here.
+        <p>
+          Need Answers? Everything you need to know, Find them{" "}
+          <span className="text-blue-500">here</span>.
         </p>
       </header>
       <main className="p-5">
         <div className="body-content">
-          <p className="">
+          <p>
             What is International Women’s Day (IWD) India 2022?
             <article className="mt-3">
               IWD India summit 2022 is the flagship event of the WomenTechmakers
@@ -22,12 +27,15 @@ const Accordio = () => {
               theme this time is focused on Progress Not Perfection.
             </article>
           </p>
-
-          <i className="icon arrow down"></i>
+          <i
+            style={{ display: showInfo ? "block" : "none" }}
+            onClick={handleClick}
+            className="icon arrow down bg-transparent"
+          ></i>
         </div>
 
         <div className="body-content">
-          <p className="">
+          <p>
             Who can register for IWD 2022?
             <article className="mt-3">
               Is it mandatory to register in order to participate in the event?
@@ -35,30 +43,39 @@ const Accordio = () => {
               and important resources to your mailbox.
             </article>
           </p>
-          <i className="icon arrow down"></i>
+          <i
+            onClick={handleClick}
+            className="icon arrow down bg-transparent"
+          ></i>
         </div>
 
         <div className="body-content">
-          <p className="">
+          <p>
             Is it mandatory to register in order to participate in the event?
             <article className="mt-3">
               It will be great if you register to ensure you get live updates
               and important resources to your mailbox.
             </article>
           </p>
-          <i className="icon arrow down"></i>
+          <i
+            onClick={handleClick}
+            className="icon arrow down bg-transparent"
+          ></i>
         </div>
         <div className="body-content">
-          <p className="">
+          <p>
             What are the event charges?
             <article className="mt-3">
               The event is free. There are no charges.
             </article>
           </p>
-          <i className="icon arrow down"></i>
+          <i
+            onClick={handleClick}
+            className="icon arrow down bg-transparent"
+          ></i>
         </div>
         <div className="body-content">
-          <p className="">
+          <p>
             Will the sessions be moderated?
             <article className="mt-3">
               Yes! We have dedicated volunteers who will moderate all the
@@ -66,7 +83,10 @@ const Accordio = () => {
               conduct, please reach out to us at iwdwtmindia@gmail.com.
             </article>
           </p>
-          <i className="icon arrow down"></i>
+          <i
+            onClick={handleClick}
+            className="icon arrow down bg-transparent"
+          ></i>
         </div>
       </main>
     </div>
