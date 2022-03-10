@@ -1,0 +1,13 @@
+.main {
+  background-color: hsl(0, 0%, 90%);
+  margin: 0 auto;
+}
+
+.down {
+  background-color: transparent;
+  color: black;
+}
+
+.body-content {
+  @apply flex my-5 place-content-between;
+}
