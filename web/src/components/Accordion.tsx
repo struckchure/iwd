@@ -2,6 +2,8 @@ import { useState } from "react";
 import "../assets/scss/accordion.scss";
 
 const Accordion = () => {
+  const [showInfo, setShowInfo] = useState(false);
+
   const handleClick = () => {}
 
   return (
