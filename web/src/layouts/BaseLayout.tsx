@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../components/Container";
 import Header from "../components/Header";
 import { get_image_url } from "../utils";
-
+import { ProfileCard } from "../components/ProfileCard";
+export interface Person {
+  name: string;
+  role: string;
+  community: string;
+  description: string;
+  image: string;
+  twitter: string;
+  LinkedIn: string;
+  website: string;
+}
 function BaseLayout() {
+  // const person1: Person = {
+  //   name: "Aananya T",
+  //   role: "WTM Ambassador & GDG Co-organizer, GDG Bangalore ",
+  //   community: "GDG Bangalore",
+  //   description:
+  //     "Aananya is a Developer Experience Engineer at Kubric. She is a strong believer of the principle “Lift as you climb”. Loves Idlis and is driven by empathy. Talk to her about Code, Community & Creativity",
+  //   image: "ananya.e34b15dd.jpg",
+  //   twitter: "https://twitter.com/py_anan",
+  //   LinkedIn: "https://www.linkedin.com/in/aananya-27/",
+  //   website: "https://vrijraj.xyz/",
+  // };
+  // const [openModal, setOpenModal] = useState(false);
+  // const [modalChild, setModalChild] = useState(<></>);
   return (
     <main>
       <Header />
@@ -235,7 +258,11 @@ function BaseLayout() {
       </Container>
 
       <div className="divider"></div>
-
+      {/* <ProfileCard
+        personData={person1}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+      /> */}
       <footer>
         <Container>
           <ul>
