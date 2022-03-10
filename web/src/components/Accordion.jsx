@@ -1,22 +1,22 @@
 import { useState } from "react";
-import "../assets/css/accordion.css";
+import "../assets/css/accordion.scss";
 
-const Accordio = () => {
-  const handleClick = () => {
-    console.log("clicked");
-  };
+const Accordion = () => {
+  const handleClick = () => {}
+
   return (
     <div className="p-3 w-1/2 main shadow-lg shadow-indigo-500">
-      <header className="px-5 pt-5 pb-2">
-        <h1 className="text-3xl text-blue-500  mb-2">
+      <div className="px-5 pt-5 pb-2">
+        <h4 className="text-3xl text-blue-500  mb-2">
           Frequently asked questions{" "}
-        </h1>
+        </h4>
         <p>
           Need Answers? Everything you need to know, Find them{" "}
           <span className="text-blue-500">here</span>.
         </p>
-      </header>
-      <main className="p-5">
+      </div>
+
+      <div className="p-5">
         <div className="body-content">
           <p>
             What is International Women’s Day (IWD) India 2022?
@@ -88,9 +88,9 @@ const Accordio = () => {
             className="icon arrow down bg-transparent"
           ></i>
         </div>
-      </main>
+      </div>
     </div>
   );
 };
 
-export default Accordio;
+export default Accordion;
