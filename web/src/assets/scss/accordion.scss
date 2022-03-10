@@ -8,8 +8,6 @@
   color: black;
 }
 
-@layer components {
-  .body-content {
-    @apply flex my-5 place-content-between;
-  }
+.body-content {
+  @apply flex my-5 place-content-between;
 }
