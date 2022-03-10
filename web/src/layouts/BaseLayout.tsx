@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import Header from "../components/Header";
+import Accordion from "../components/Accordion";
 import { get_image_url } from "../utils";
 
 function BaseLayout() {
@@ -186,7 +187,9 @@ function BaseLayout() {
 
         {/* frequently asked questions */}
 
-        <section></section>
+        <section>
+          <Accordion />
+        </section>
 
         {/* conclusion / closing section */}
 
