@@ -1,10 +1,15 @@
 import Container from "../components/Container";
 import Header from "../components/Header";
 
+import Accordion from "../components/Accordion";
 function FAQ() {
   return (
     <>
       <Header />
+
+      <div className="my-[5rem] mx-[5rem]">
+        <Accordion />
+      </div>
       <div className="divider"></div>
       <footer>
         <Container>
