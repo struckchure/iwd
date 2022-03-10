@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/css/accordion.scss";
+import "../assets/scss/accordion.scss";
 
 const Accordion = () => {
   const handleClick = () => {}
