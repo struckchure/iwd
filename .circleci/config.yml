@@ -16,8 +16,8 @@ jobs:
       - run:
           name: Run tests
           command: |
-            cd api
             pipenv run python manage.py test
+          working_directory: ./api
 
 workflows:
   sample:
