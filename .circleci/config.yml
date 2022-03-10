@@ -15,7 +15,7 @@ jobs:
           app-dir: ./api
       - run:
           name: Run tests
-          command: pipenv run python manage.py test
+          command: pipenv run python ./api/manage.py test
 
 workflows:
   sample:
