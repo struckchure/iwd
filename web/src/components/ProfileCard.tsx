@@ -57,7 +57,7 @@ const ProfileModal: FunctionComponent<ProfileCardProps> = ({
 }) => {
   return (
     <div
-      className="modalCard"
+      className="modal-card"
       onClick={(ev) => {
         ev.stopPropagation();
       }}

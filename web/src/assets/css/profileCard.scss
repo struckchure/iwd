@@ -22,7 +22,7 @@
   }
 }
 
-.modalCard {
+.modal-card {
   max-width: 800px;
   width: 80vw;
   background-color: #ffffff;
@@ -68,7 +68,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .modalCard {
+  .modal-card {
     & > :first-child {
       display: flex;
       flex-direction: column;
