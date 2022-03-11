@@ -9,7 +9,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="main w-full p-3">
+    <div className="w-full p-3">
       <div className="px-5 pt-5 pb-2">
         <h4 className="mb-2 text-3xl  text-blue-500">
           Frequently asked questions
