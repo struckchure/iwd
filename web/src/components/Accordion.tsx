@@ -17,9 +17,9 @@ const Accordion = () => {
         </h4>
         <p>
           Need Answers? Everything you need to know, Find them
-          <a href="" className="no-underline text-blue-500">
+          <Link to="/faq" className="no-underline text-blue-500">
             here
-          </a>
+          </Link>
         </p>
       </div>
 
