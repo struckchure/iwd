@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../assets/scss/accordion.scss";
 
 const Accordion = () => {
@@ -10,14 +9,14 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-3 w-1/2 main shadow-lg shadow-indigo-500">
+    <div className="main w-full p-3">
       <div className="px-5 pt-5 pb-2">
-        <h4 className="text-3xl text-blue-500  mb-2">
+        <h4 className="mb-2 text-3xl  text-blue-500">
           Frequently asked questions
         </h4>
         <p>
           Need Answers? Everything you need to know, Find them
-          <a href="" className="no-underline text-blue-500">
+          <a href="" className="text-blue-500 no-underline">
             here
           </a>
         </p>
