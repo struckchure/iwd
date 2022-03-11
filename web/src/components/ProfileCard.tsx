@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
+
 import { TwitterIcon, LinkedInIcon, LinkIcon } from "./svgs";
-import { Person } from "../layouts/BaseLayout";
 import ImageCropper from "./ImageCropper";
 import Modal from "./modal";
-import "../assets/css/profileCard.scss";
+import "../assets/css/profile-card.scss";
 
 interface ProfileCardProps {
   personData: Person;
