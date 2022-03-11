@@ -1,9 +1,6 @@
 import React, { ReactNode } from "react";
-import Container from "../components/Container";
-import Header from "../components/Header";
-import Accordion from "../components/Accordion";
-import { get_image_url } from "../utils";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 interface Props {
   children: ReactNode;
