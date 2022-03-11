@@ -5,9 +5,7 @@ import BaseLayout from "../layouts/BaseLayout";
 function FAQ() {
   return (
     <BaseLayout>
-      <Container>
-        <Accordion />
-      </Container>
+      <Accordion />
     </BaseLayout>
   );
 }

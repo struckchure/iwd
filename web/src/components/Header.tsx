@@ -8,13 +8,13 @@ function Header() {
       <nav>
         <ul className="logo">
           <li>
-            <a href="#">
+            <Link to="/">
               <img
                 src={get_image_url("wtm-logo.svg")}
                 alt=""
                 className="h-auto w-[12rem] object-contain"
               />
-            </a>
+            </Link>
           </li>
         </ul>
 

@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 
+import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -12,7 +13,7 @@ function BaseLayout({ children }: Props) {
     <main>
       <Header />
 
-      <div>{children}</div>
+      <Container>{children}</Container>
 
       <div className="divider"></div>
 
