@@ -1,5 +1,6 @@
 import React from "react";
 import { get_image_url } from "../utils";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -20,9 +21,9 @@ function Header() {
 
           <ul className="links">
             <li>
-              <a href="#" className="active">
+              <Link className="active" to="/">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -36,9 +37,8 @@ function Header() {
             <li>
               <a href="#">Badge</a>
             </li>
-
             <li>
-              <a href="#">FAQ</a>
+              <Link to="/faq">FAQ</Link>
             </li>
 
             <li>
