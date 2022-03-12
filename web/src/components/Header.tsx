@@ -1,10 +1,12 @@
 import React from "react";
-import { get_image_url } from "../utils";
 import { Link } from "react-router-dom";
+
+import { get_image_url } from "../utils";
+import NavLink from "./NavLink";
 
 function Header() {
   return (
-    <header>
+    <>
       <nav>
         <ul className="logo">
           <li>
@@ -20,25 +22,23 @@ function Header() {
 
         <ul className="links">
           <li>
-            <Link className="active" to="/">
-              Home
-            </Link>
+            <NavLink to="/">Home</NavLink>
           </li>
 
           <li>
-            <Link to="/teams">Team</Link>
+            <NavLink to="/teams">Team</NavLink>
           </li>
 
           <li>
-            <Link to="/communities">Communities</Link>
+            <NavLink to="/communities">Communities</NavLink>
           </li>
 
           <li>
-            <Link to="/badge">Badge</Link>
+            <NavLink to="/badge">Badge</NavLink>
           </li>
 
           <li>
-            <Link to="/faq">FAQ</Link>
+            <NavLink to="/faq">FAQ</NavLink>
           </li>
 
           <li>
@@ -50,12 +50,14 @@ function Header() {
         </ul>
       </nav>
 
-      <section className="w-full bg-gray-700 py-2 text-center text-sm text-white">
-        Want to become a speaker of our{" "}
-        <span className="font-bold">#IWDIndia2022</span>.
-        <a href="#">Click here</a>
-      </section>
-    </header>
+      <header>
+        <div className="w-full bg-gray-700 py-2 text-center text-sm text-white">
+          Want to become a speaker of our{" "}
+          <span className="font-bold">#IWDIndia2022</span>.
+          <a href="#">Click here</a>
+        </div>
+      </header>
+    </>
   );
 }
 
