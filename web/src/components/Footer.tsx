@@ -5,6 +5,10 @@ import Container from "./Container";
 function Footer() {
   return (
     <footer>
+      <button className="scroll-top-button">
+        <i className="icon arrow up"></i>
+      </button>
+
       <Container>
         <ul>
           <li>
@@ -12,7 +16,7 @@ function Footer() {
           </li>
         </ul>
 
-        <ul className="flex w-full flex-wrap gap-4">
+        <ul className="links__footer flex w-full flex-wrap gap-4">
           <li>
             <a href="#">IWD Nigeria 2021</a>
           </li>
