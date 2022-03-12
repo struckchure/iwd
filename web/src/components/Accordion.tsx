@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../assets/scss/accordion.scss";
 
 const Accordion = () => {
@@ -16,9 +17,9 @@ const Accordion = () => {
         </h4>
         <p>
           Need Answers? Everything you need to know, Find them
-          <a href="" className="text-blue-500 no-underline">
+          <Link to="/faq" className="text-blue-500 no-underline">
             here
-          </a>
+          </Link>
         </p>
       </div>
 
@@ -34,10 +35,7 @@ const Accordion = () => {
             theme this time is focused on Progress Not Perfection.
           </p>
 
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
 
         <div className="body-content">
@@ -49,10 +47,7 @@ const Accordion = () => {
             will be great if you register to ensure you get live updates and
             important resources to your mailbox.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
 
         <div className="body-content">
@@ -63,10 +58,7 @@ const Accordion = () => {
             It will be great if you register to ensure you get live updates and
             important resources to your mailbox.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
         <div className="body-content">
           <p>
@@ -75,10 +67,7 @@ const Accordion = () => {
             <br />
             The event is free. There are no charges.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
         <div className="body-content">
           <p>
@@ -89,10 +78,7 @@ const Accordion = () => {
             sessions. If you witness any attendee breaching the code of conduct,
             please reach out to us at iwdwtmindia@gmail.com.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
       </div>
     </div>
