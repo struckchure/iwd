@@ -51,7 +51,7 @@ function Header() {
       </nav>
 
       <header>
-        <div className="w-full bg-gray-700 py-2 text-center text-sm text-white">
+        <div className="w-full bg-gray-700 py-2 text-center text-xs text-white md:text-sm">
           Want to become a speaker of our{" "}
           <span className="font-bold">#IWDIndia2022</span>.
           <a href="#">Click here</a>
