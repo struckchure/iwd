@@ -1,23 +1,16 @@
 .card {
-  width: 284px;
-  height: 232px;
-  border-radius: 16px;
-  background-color: #ffffff;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
+  @apply flex h-auto w-full flex-col items-center
+  rounded-[16px] bg-white py-[20px] md:w-[300px];
 
   img {
-    width: 100px;
+    @apply w-[100px];
   }
+
   a {
-    padding: 12px;
-    margin: 0;
+    @apply m-0 p-[12px];
   }
+
   svg {
-    width: 24px;
-    height: 24px;
+    @apply h-[24px] w-[24px];
   }
 }
