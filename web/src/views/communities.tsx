@@ -1,6 +1,5 @@
 import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
-import { get_image_url } from "../utils";
 
 function Communities() {
   return (
