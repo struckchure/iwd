@@ -83,7 +83,9 @@ function Home() {
           </div>
 
           <div className="w-full">
-            <h4 className="my-4 text-4xl">#ProgressNotPerfection</h4>
+            <h4 className="my-4 text-3xl md:text-4xl">
+              #ProgressNotPerfection
+            </h4>
             <p>
               This year our theme celebrates all kinds of progress - big or
               small - and the strength we demonstrate when we don’t let fear
