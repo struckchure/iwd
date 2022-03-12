@@ -15,9 +15,12 @@ a {
   @apply mx-1 underline;
 }
 
-nav,
-footer {
-  @apply flex-col items-center justify-between bg-slate-200 px-6 md:flex md:flex-row;
+main {
+  @apply relative;
+}
+
+nav {
+  @apply sticky top-0 flex-col items-center justify-between bg-[rgba(218,211,211,0.5)] px-6 md:flex md:flex-row;
 
   ul {
     @apply flex items-center justify-between gap-2 p-0;
@@ -46,6 +49,28 @@ footer {
         }
       }
     }
+  }
+}
+
+footer {
+  @apply relative;
+
+  ul {
+    @apply w-full py-4;
+
+    li {
+      a {
+        @apply no-underline transition duration-200;
+
+        &:hover {
+          @apply text-gray-800;
+        }
+      }
+    }
+  }
+
+  button.scroll-top-button {
+    @apply absolute top-[-20%] right-16 grid h-16 w-16 place-items-center rounded-full bg-white text-black shadow-lg outline outline-1 outline-gray-300;
   }
 }
 

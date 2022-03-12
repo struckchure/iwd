@@ -3,5 +3,5 @@
 }
 
 .body-content {
-  @apply my-5 flex place-content-between;
+  @apply my-5 flex place-content-between border-b-[1px] border-solid border-gray-300 py-4;
 }
