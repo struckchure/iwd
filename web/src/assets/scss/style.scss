@@ -70,7 +70,7 @@ footer {
   }
 
   button.scroll-top-button {
-    @apply absolute top-[-20%] right-16 grid h-16 w-16 place-items-center rounded-full bg-white text-black shadow-lg outline outline-1 outline-gray-300;
+    @apply absolute top-[-10%] right-16 grid h-16 w-16 place-items-center rounded-full bg-white text-black shadow-lg outline outline-1 outline-gray-300 md:top-[-20%];
   }
 }
 

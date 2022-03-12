@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 interface Props {
   children: ReactNode;
-  title: string;
+  title?: string;
 }
 
 function BaseLayout({ children, title }: Props) {

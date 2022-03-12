@@ -9,7 +9,7 @@ function Home() {
     <BaseLayout>
       {/* intro section */}
 
-      <section>
+      <section className="pt-24">
         <div className="flex flex-col-reverse items-start justify-between gap-4 md:flex-row">
           <div className="flex flex-col gap-4">
             <h4 className="text-4xl">International Women's Day Nigeria 2022</h4>
@@ -50,7 +50,7 @@ function Home() {
             <div>
               <img
                 src={get_image_url("hero-first-side.svg")}
-                className="h-auto w-full object-contain md:w-2/4"
+                className="h-auto w-full object-contain md:w-2/3"
                 alt=""
               />
             </div>
@@ -132,7 +132,7 @@ function Home() {
 
       <section>
         <div className="flex flex-col items-start justify-center gap-4 md:flex-row">
-          <div className="flex w-3/5 flex-col gap-4 rounded-2xl bg-white p-4">
+          <div className="flex w-full flex-col gap-4 rounded-2xl bg-white p-4 md:w-3/5">
             <h4 className="text-3xl">Call for Speakers</h4>
 
             <p>
