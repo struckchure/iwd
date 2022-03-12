@@ -1,12 +1,14 @@
+<<<<<<< HEAD
 .main {
   background-color: hsl(0, 0%, 90%);
 }
 
+=======
+>>>>>>> origin/main
 .down {
-  background-color: transparent;
-  color: black;
+  @apply bg-transparent text-black;
 }
 
 .body-content {
-  @apply flex my-5 place-content-between;
+  @apply my-5 flex place-content-between;
 }

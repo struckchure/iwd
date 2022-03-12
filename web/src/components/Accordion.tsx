@@ -10,14 +10,14 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-3 w-1/2 main shadow-lg shadow-indigo-500">
+    <div className="w-full p-3">
       <div className="px-5 pt-5 pb-2">
-        <h4 className="text-3xl text-blue-500  mb-2">
+        <h4 className="mb-2 text-3xl  text-blue-500">
           Frequently asked questions
         </h4>
         <p>
           Need Answers? Everything you need to know, Find them
-          <Link to="/faq" className="no-underline text-blue-500">
+          <Link to="/faq" className="text-blue-500 no-underline">
             here
           </Link>
         </p>
@@ -35,10 +35,7 @@ const Accordion = () => {
             theme this time is focused on Progress Not Perfection.
           </p>
 
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
 
         <div className="body-content">
@@ -50,10 +47,7 @@ const Accordion = () => {
             will be great if you register to ensure you get live updates and
             important resources to your mailbox.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
 
         <div className="body-content">
@@ -64,10 +58,7 @@ const Accordion = () => {
             It will be great if you register to ensure you get live updates and
             important resources to your mailbox.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
         <div className="body-content">
           <p>
@@ -76,10 +67,7 @@ const Accordion = () => {
             <br />
             The event is free. There are no charges.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
         <div className="body-content">
           <p>
@@ -90,10 +78,7 @@ const Accordion = () => {
             sessions. If you witness any attendee breaching the code of conduct,
             please reach out to us at iwdwtmindia@gmail.com.
           </p>
-          <i
-            onClick={handleClick}
-            className="icon arrow down bg-transparent"
-          ></i>
+          <i className="icon arrow down bg-transparent"></i>
         </div>
       </div>
     </div>
