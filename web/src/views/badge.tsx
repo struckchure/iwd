@@ -57,6 +57,9 @@ function Badge() {
             </p>
           </div>
         </div>
+        <div className="bg-white w-1/2 h-1/2 rounded-lg">
+          <img className=" p-[50px] h-1/2 " src={Photo} alt="" />
+        </div>
       </div>
     </BaseLayout>
   );
