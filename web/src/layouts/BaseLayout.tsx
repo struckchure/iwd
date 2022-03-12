@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect } from "react";
 
 import Container from "../components/Container";
 import Footer from "../components/Footer";
@@ -6,9 +6,14 @@ import Header from "../components/Header";
 
 interface Props {
   children: ReactNode;
+  title: string;
 }
 
-function BaseLayout({ children }: Props) {
+function BaseLayout({ children, title }: Props) {
+  useEffect(() => {
+    document.title = title || "IWD Nigeria 2022";
+  }, []);
+
   return (
     <main>
       <Header />
