@@ -13,7 +13,7 @@ function FAQ() {
         <img
           src={get_image_url("hero-side-img.svg")}
           className="absolute top-40 right-20 hidden h-auto w-2/5 object-contain opacity-30 md:block"
-          alt=""
+          alt="section image"
         />
       </div>
     </BaseLayout>
