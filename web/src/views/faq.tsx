@@ -14,7 +14,6 @@ function FAQ() {
         <img
           src={get_image_url("hero-side-img.svg")}
           className="h-auto w-full object-contain"
-          alt="section image"
         />
       </div>
     </BaseLayout>
