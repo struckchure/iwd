@@ -1,14 +1,35 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import AccordionElement from "./AccordionElement";
 import "../assets/scss/accordion.scss";
 
+const texts = [
+  {
+    title: "What is International Women’s Day (IWD) India 2022?",
+    descr:
+      "IWD India summit 2022 is the flagship event of the WomenTechmakers community to celebrate International Women’s day. Women and allies come together to connect, inspire and network with each other. The theme this time is focused on Progress Not Perfection.",
+  },
+  {
+    title: "Who can register for IWD 2022?",
+    descr:
+      "Is it mandatory to register in order to participate in the event? It will be great if you register to ensure you get live updates and important resources to your mailbox.",
+  },
+  {
+    title: "Is it mandatory to register in order to participate in the event?",
+    descr:
+      "It will be great if you register to ensure you get live updates and important resources to your mailbox.",
+  },
+  {
+    title: "What are the event charges?",
+    descr: "The event is free. There are no charges.",
+  },
+  {
+    title: "Will the sessions be moderated?",
+    descr:
+      "Yes! We have dedicated volunteers who will moderate all the sessions. If you witness any attendee breaching the code of conduct, please reach out to us at iwdwtmindia@gmail.com.",
+  },
+];
+
 const Accordion = () => {
-  const [showInfo, setShowInfo] = useState(false);
-
-  const handleClick = () => {
-    // setShowInfo(!showInfo);
-  };
-
   return (
     <div className="w-full p-3">
       <div className="px-5 pt-5 pb-2">
@@ -24,64 +45,12 @@ const Accordion = () => {
       </div>
 
       <div className="p-5">
-        <div className="body-content">
-          <p>
-            What is International Women’s Day (IWD) India 2022?
-            <br />
-            <br />
-            IWD India summit 2022 is the flagship event of the WomenTechmakers
-            community to celebrate International Women’s day. Women and allies
-            come together to connect, inspire and network with each other. The
-            theme this time is focused on Progress Not Perfection.
-          </p>
-
-          <i className="icon arrow down bg-transparent"></i>
-        </div>
-
-        <div className="body-content">
-          <p>
-            Who can register for IWD 2022?
-            <br />
-            <br />
-            Is it mandatory to register in order to participate in the event? It
-            will be great if you register to ensure you get live updates and
-            important resources to your mailbox.
-          </p>
-          <i className="icon arrow down bg-transparent"></i>
-        </div>
-
-        <div className="body-content">
-          <p>
-            Is it mandatory to register in order to participate in the event?
-            <br />
-            <br />
-            It will be great if you register to ensure you get live updates and
-            important resources to your mailbox.
-          </p>
-          <i className="icon arrow down bg-transparent"></i>
-        </div>
-        <div className="body-content">
-          <p>
-            What are the event charges?
-            <br />
-            <br />
-            The event is free. There are no charges.
-          </p>
-          <i className="icon arrow down bg-transparent"></i>
-        </div>
-        <div className="body-content">
-          <p>
-            Will the sessions be moderated?
-            <br />
-            <br />
-            Yes! We have dedicated volunteers who will moderate all the
-            sessions. If you witness any attendee breaching the code of conduct,
-            please reach out to us at iwdwtmindia@gmail.com.
-          </p>
-          <i className="icon arrow down bg-transparent"></i>
-        </div>
+        {texts.map((text) => (
+          <AccordionElement title={text.title} descr={text.descr} />
+        ))}
       </div>
     </div>
+    // </div>
   );
 };
 
