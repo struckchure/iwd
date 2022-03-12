@@ -9,3 +9,15 @@
 .body-content {
   @apply my-5 flex place-content-between border-b-[1px] border-solid border-gray-300 py-4;
 }
+
+.dont-show {
+  height: 0rem;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.show-info {
+  height: 9rem;
+  transition: 0.4s;
+  border-right: 1px solid grey;
+}
