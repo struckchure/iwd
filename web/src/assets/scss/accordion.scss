@@ -12,13 +12,12 @@
 }
 
 .dont-show {
-  height: 0rem;
+  height: 0;
   overflow: hidden;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .show-info {
-  height: 9rem;
-  transition: 0.4s;
-  border-right: 1px solid grey;
+  height: 5em;
+  transition: 0.5s;
 }
