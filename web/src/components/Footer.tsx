@@ -5,7 +5,12 @@ import Container from "./Container";
 function Footer() {
   return (
     <footer>
-      <button className="scroll-top-button">
+      <button
+        className="scroll-top-button"
+        onClick={() => {
+          document.body.scrollTop = 0;
+        }}
+      >
         <i className="icon arrow up"></i>
       </button>
 
