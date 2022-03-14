@@ -102,7 +102,7 @@ function Header() {
       <header>
         <div className="w-full bg-gray-700 py-2 text-center text-xs text-white md:text-sm">
           Want to become a speaker of our{" "}
-          <span className="font-bold">#IWDNigeria2022</span>.
+          <span className="font-bold">#IWDKano2022</span>.
           <a href="#">Click here</a>
         </div>
       </header>

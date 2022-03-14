@@ -11,7 +11,7 @@ interface Props {
 
 function BaseLayout({ children, title }: Props) {
   useEffect(() => {
-    document.title = title || "IWD Nigeria 2022";
+    document.title = title || "IWD Kano 2022";
   }, []);
 
   return (

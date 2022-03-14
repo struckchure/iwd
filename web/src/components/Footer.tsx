@@ -17,13 +17,13 @@ function Footer() {
       <Container>
         <ul>
           <li>
-            <h4 className="text-3xl">IWD Nigeria 2022</h4>
+            <h4 className="text-3xl">IWD Kano 2022</h4>
           </li>
         </ul>
 
         <ul className="links__footer flex w-full flex-wrap gap-4">
           <li>
-            <a href="#">IWD Nigeria 2021</a>
+            <a href="#">IWD Kano 2021</a>
           </li>
           <li>
             <a href="#">About GDG Program</a>

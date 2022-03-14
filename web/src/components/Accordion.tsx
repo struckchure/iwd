@@ -4,9 +4,9 @@ import "../assets/scss/accordion.scss";
 
 const texts = [
   {
-    title: "What is International Women’s Day (IWD) Nigeria 2022?",
+    title: "What is International Women’s Day (IWD) Kano 2022?",
     descr:
-      "IWD Nigeria summit 2022 is the flagship event of the WomenTechmakers community to celebrate International Women’s day. Women and allies come together to connect, inspire and network with each other. The theme this time is focused on Progress Not Perfection.",
+      "IWD Kano summit 2022 is the flagship event of the WomenTechmakers community to celebrate International Women’s day. Women and allies come together to connect, inspire and network with each other. The theme this time is focused on Progress Not Perfection.",
   },
   {
     title: "Who can register for IWD 2022?",
@@ -25,7 +25,7 @@ const texts = [
   {
     title: "Will the sessions be moderated?",
     descr:
-      "Yes! We have dedicated volunteers who will moderate all the sessions. If you witness any attendee breaching the code of conduct, please reach out to us at iwdwtmnigeria@gmail.com.",
+      "Yes! We have dedicated volunteers who will moderate all the sessions. If you witness any attendee breaching the code of conduct, please reach out to us at iwdwtmKano@gmail.com.",
   },
 ];
 

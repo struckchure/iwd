@@ -12,13 +12,13 @@ function Home() {
       <section className="pt-24">
         <div className="flex flex-col-reverse items-start justify-between gap-4 md:flex-row">
           <div className="flex flex-col gap-4">
-            <h4 className="text-4xl">International Women's Day Nigeria 2022</h4>
+            <h4 className="text-4xl">International Women's Day Kano 2022</h4>
 
             <p>
-              IWD Nigeria 2022 Summit is a celebration for all women in
-              technology. Women and allies from all across the country come
-              together to empower, inspire and learn from each other. This year
-              we are focused on recognizing our theme Progress Not Perfection.
+              IWD Kano 2022 Summit is a celebration for all women in technology.
+              Women and allies from all across the country come together to
+              empower, inspire and learn from each other. This year we are
+              focused on recognizing our theme Progress Not Perfection.
             </p>
 
             <div className="flex flex-col items-center justify-start gap-4 md:flex-row md:items-start">
@@ -104,14 +104,14 @@ function Home() {
               <a href="#">
                 <button className="bg-gray-300 p-2 text-gray-800 hover:bg-gray-400">
                   <i className="icon twitter"></i>
-                  <span>IWD Nigeria</span>
+                  <span>IWD Kano</span>
                 </button>
               </a>
 
               <a href="#">
                 <button className="bg-gray-300 p-2 text-gray-800 hover:bg-gray-400">
                   <i className="icon twitter"></i>
-                  <span>GDG Nigeria</span>
+                  <span>GDG Kano</span>
                 </button>
               </a>
 
@@ -150,19 +150,19 @@ function Home() {
 
           <div className="flex w-full flex-col gap-4 rounded-2xl bg-white p-4">
             <h4 className="max-w-md text-3xl">
-              Women Techmakers International Women’s Day Nigeria Summit 2021
+              Women Techmakers International Women’s Day Kano Summit 2021
             </h4>
 
             <p>
-              IWD Nigeria 2021 had seen unprecedented love and adulation from
-              women and allies all over the world. Women Ambassadors from across
-              Nigeria had gotten together to showcase exemplary teamwork, a
-              passion to win and the courage to create something that hadn't
-              been done before. The event was a phenomenal success, but the best
-              part was that it brought out the sisterhood between communities.
-              Together, we all rose. The team had tons of learnings and are now
-              all set to make IWD Nigeria 2022 all the more worthy of your time.
-              Stay tuned for a bigger, better and a never before experience.
+              IWD Kano 2021 had seen unprecedented love and adulation from women
+              and allies all over the world. Women Ambassadors from across Kano
+              had gotten together to showcase exemplary teamwork, a passion to
+              win and the courage to create something that hadn't been done
+              before. The event was a phenomenal success, but the best part was
+              that it brought out the sisterhood between communities. Together,
+              we all rose. The team had tons of learnings and are now all set to
+              make IWD Kano 2022 all the more worthy of your time. Stay tuned
+              for a bigger, better and a never before experience.
             </p>
 
             <div className="flex gap-2">
@@ -191,15 +191,15 @@ function Home() {
         <div className="mx-auto flex w-3/4 flex-col items-center justify-center gap-2">
           <h4 className="text-center text-3xl font-bold">
             Keep in touch with{" "}
-            <span className="text-blue-600">#IWDNigeria2022</span> for the
-            latest announcements
+            <span className="text-blue-600">#IWDKano2022</span> for the latest
+            announcements
           </h4>
 
           <p className="w-2/3 text-center">
             Let's get connected so that we can reach out to each other via a
             simple notification. Stake out{" "}
-            <span className="text-blue-600">#IWDNigeria2022</span> for the
-            updates and news.
+            <span className="text-blue-600">#IWDKano2022</span> for the updates
+            and news.
           </p>
 
           <div className="flex">
