@@ -28,10 +28,17 @@ function nav_links() {
       </li>
 
       <li>
-        <button>
-          <i className="icon user circle"></i>
-          <span className="uppercase">register</span>
-        </button>
+        <a
+          href={
+            "https://gdg.community.dev/events/details/google-gdg-cloud-kano-presents-wtm-cloud-kano-international-womens-day/"
+          }
+          className="rounded-full p-0 hover:rounded-full hover:border-none hover:bg-current hover:no-underline"
+        >
+          <button>
+            <i className="icon user circle"></i>
+            <span className="uppercase">register</span>
+          </button>
+        </a>
       </li>
     </>
   );
@@ -95,7 +102,7 @@ function Header() {
       <header>
         <div className="w-full bg-gray-700 py-2 text-center text-xs text-white md:text-sm">
           Want to become a speaker of our{" "}
-          <span className="font-bold">#IWDIndia2022</span>.
+          <span className="font-bold">#IWDNigeria2022</span>.
           <a href="#">Click here</a>
         </div>
       </header>

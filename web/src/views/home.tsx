@@ -150,18 +150,18 @@ function Home() {
 
           <div className="flex w-full flex-col gap-4 rounded-2xl bg-white p-4">
             <h4 className="max-w-md text-3xl">
-              Women Techmakers International Women’s Day India Summit 2021
+              Women Techmakers International Women’s Day Nigeria Summit 2021
             </h4>
 
             <p>
-              IWD India 2021 had seen unprecedented love and adulation from
+              IWD Nigeria 2021 had seen unprecedented love and adulation from
               women and allies all over the world. Women Ambassadors from across
-              India had gotten together to showcase exemplary teamwork, a
+              Nigeria had gotten together to showcase exemplary teamwork, a
               passion to win and the courage to create something that hadn't
               been done before. The event was a phenomenal success, but the best
               part was that it brought out the sisterhood between communities.
               Together, we all rose. The team had tons of learnings and are now
-              all set to make IWD India 2022 all the more worthy of your time.
+              all set to make IWD Nigeria 2022 all the more worthy of your time.
               Stay tuned for a bigger, better and a never before experience.
             </p>
 
@@ -191,15 +191,15 @@ function Home() {
         <div className="mx-auto flex w-3/4 flex-col items-center justify-center gap-2">
           <h4 className="text-center text-3xl font-bold">
             Keep in touch with{" "}
-            <span className="text-blue-600">#IWDIndia2022</span> for the latest
-            announcements
+            <span className="text-blue-600">#IWDNigeria2022</span> for the
+            latest announcements
           </h4>
 
           <p className="w-2/3 text-center">
             Let's get connected so that we can reach out to each other via a
             simple notification. Stake out{" "}
-            <span className="text-blue-600">#IWDIndia2022</span> for the updates
-            and news.
+            <span className="text-blue-600">#IWDNigeria2022</span> for the
+            updates and news.
           </p>
 
           <div className="flex">

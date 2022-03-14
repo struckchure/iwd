@@ -8,11 +8,13 @@ function Badge() {
     <BaseLayout>
       <div className="mt-[50px] flex flex-col justify-start py-[50px] md:flex-row ">
         <div className="w-full p-8">
-          <h1 className="text-black-500 my-3 text-[40px] ">IWD India Badge</h1>
+          <h1 className="text-black-500 my-3 text-[40px] ">
+            IWD Nigeria Badge
+          </h1>
           <p className="text-xl">
             Now that you are here, how about personalising your IWD 2022
             profile? Upload an image and generate a personalised badge with the
-            IWD 2022 frame. Also share your image using #IWDIndia on different
+            IWD 2022 frame. Also share your image using #IWDNigeria on different
             social platforms.
           </p>
           <div className="my-8 p-0">
