@@ -20,7 +20,8 @@ main {
 }
 
 nav {
-  @apply sticky top-0 flex-col items-center justify-between bg-[rgba(218,211,211,0.5)] px-6 md:flex md:flex-row;
+  @apply sticky top-0 z-30 flex-col items-center
+  justify-between bg-[rgba(218,211,211,0.5)] px-6 md:flex md:flex-row;
 
   ul {
     @apply flex items-center justify-between gap-2 p-0;

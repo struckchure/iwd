@@ -10,7 +10,7 @@ function Home() {
       {/* intro section */}
 
       <section className="pt-24">
-        <div className="flex flex-col-reverse items-start justify-between gap-4 md:flex-row">
+        <div className="flex flex-col-reverse items-center justify-between gap-4 md:flex-row">
           <div className="flex flex-col gap-4">
             <h4 className="text-4xl">International Women's Day Kano 2022</h4>
 
@@ -46,22 +46,19 @@ function Home() {
                 </button>
               </div>
             </div>
-
-            <div>
-              <img
-                src={get_image_url("hero-first-side.svg")}
-                className="h-auto w-full object-contain md:w-2/3"
-                alt=""
-              />
-            </div>
           </div>
 
           {/* image */}
 
-          <div>
+          <div className="relative z-0 flex w-full gap-2">
             <img
-              src={get_image_url("hero-first-image.png")}
-              className="h-auto w-full object-contain"
+              src={get_image_url("hero-first-image.jpeg")}
+              className="h-auto w-full rounded-bl-[40%] rounded-tr-[40%] object-contain"
+              alt=""
+            />
+            <img
+              src={get_image_url("hero-first-side.svg")}
+              className="absolute right-[-20%] top-10 hidden h-auto w-full object-contain md:block md:w-1/3"
               alt=""
             />
           </div>
@@ -203,25 +200,22 @@ function Home() {
           </p>
 
           <div className="flex">
-            <a href="#">
+            <a href="https://twitter.com/Kanowtm" target="_blank">
               <button className="h-auto w-auto p-2">
                 <i className="icon twitter"></i>
               </button>
             </a>
 
-            <a href="#">
-              <button className="h-auto w-auto p-2">
-                <i className="icon linkedin"></i>
-              </button>
-            </a>
-
-            <a href="#">
+            <a href="https://instagram.com/Kanowtm" target="_blank">
               <button className="h-auto w-auto p-2">
                 <i className="icon instagram"></i>
               </button>
             </a>
 
-            <a href="#">
+            <a
+              href="https://youtube.com/channel/UCBQrfQq-kabRDsRf2hnr7Zg"
+              target="_blank"
+            >
               <button className="h-auto w-auto p-2">
                 <i className="icon youtube"></i>
               </button>
