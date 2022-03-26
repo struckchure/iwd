@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { get_image_url } from "../utils";
@@ -57,6 +57,42 @@ function toggle_mobile_menu() {
 }
 
 function Header() {
+  const [count_down, set_count_down] = useState("...");
+
+  useEffect(() => {
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 2, 2022 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      var __count_down =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        __count_down = "Starting now ...";
+      }
+
+      set_count_down(__count_down);
+    }, 1000);
+  }, []);
+
   return (
     <>
       <nav>
@@ -101,9 +137,7 @@ function Header() {
 
       <header>
         <div className="w-full bg-gray-700 py-2 text-center text-xs text-white md:text-sm">
-          Want to become a speaker of our{" "}
-          <span className="font-bold">#IWDKano2022</span>.
-          <a href="#">Click here</a>
+          <span className="font-mono">{count_down}</span>
         </div>
       </header>
     </>
