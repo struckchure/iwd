@@ -26,7 +26,7 @@ function Home() {
                 <div className="w-fit rounded-xl border-l-[0.7rem] border-solid border-blue-600 bg-white p-2">
                   When
                 </div>
-                <label htmlFor="">April 2 & 3, 2022</label>
+                <label htmlFor="">April 2, 2022</label>
               </div>
 
               <div className="flex flex-col items-center gap-2 md:items-start">
