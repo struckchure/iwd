@@ -129,7 +129,7 @@ function Home() {
 
       {/* call for speaks / more info */}
 
-      <section>
+      {/* <section>
         <div className="flex flex-col items-start justify-center gap-4 md:flex-row">
           <div className="flex w-full flex-col gap-4 rounded-2xl bg-white p-4 md:w-3/5">
             <h4 className="text-3xl">Call for Speakers</h4>
@@ -174,7 +174,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* frequently asked questions */}
 

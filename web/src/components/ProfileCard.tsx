@@ -1,6 +1,4 @@
 import React, { FunctionComponent } from "react";
-
-import { TwitterIcon, LinkedInIcon, LinkIcon } from "./svgs";
 import "../assets/scss/profile-card.scss";
 
 interface ProfileCardProps {
@@ -13,9 +11,10 @@ export interface Person {
   community: string;
   description: string;
   image: string;
-  twitter: string;
-  linkedin: string;
-  website: string;
+  twitter?: string;
+  linkedin?: string;
+  website?: string;
+  instagram?: string;
 }
 
 export const ProfileCard: FunctionComponent<ProfileCardProps> = ({
@@ -31,16 +30,30 @@ export const ProfileCard: FunctionComponent<ProfileCardProps> = ({
         />
         <p style={{ fontSize: "105%" }}>{personData.name}</p>
         <p style={{ fontSize: "80%" }}>{personData.community}</p>
-        <div className="flex flex-row items-center">
-          <a href={personData.twitter} target="_blank" rel="noreferrer">
-            <TwitterIcon />
-          </a>
-          <a href={personData.linkedin} target="_blank" rel="noreferrer">
-            <LinkedInIcon />
-          </a>
-          <a href={personData.website} target="_blank" rel="noreferrer">
-            <LinkIcon />
-          </a>
+        <div className="flex flex-row items-center justify-center gap-2">
+          {personData.twitter && (
+            <a href={personData.twitter} target="_blank" rel="noreferrer">
+              <i className="icon twitter"></i>
+            </a>
+          )}
+
+          {personData.linkedin && (
+            <a href={personData.linkedin} target="_blank" rel="noreferrer">
+              <i className="icon linkedin"></i>
+            </a>
+          )}
+
+          {personData.website && (
+            <a href={personData.website} target="_blank" rel="noreferrer">
+              <i className="icon link"></i>
+            </a>
+          )}
+
+          {personData.instagram && (
+            <a href={personData.instagram} target="_blank" rel="noreferrer">
+              <i className="icon instagram"></i>
+            </a>
+          )}
         </div>
       </div>
     </>
